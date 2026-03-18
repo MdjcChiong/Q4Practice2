@@ -11,6 +11,31 @@
    <button class="btn btn-info" onclick = "teamRank()"> Rank</button>
 
    <script>
+    var rank = "1st";
+
+    var message = "";
+
+    switch (true){
+        case (rank === "1st"); //compare
+        message = "Champions!";
+        break;
+         case (rank === "2nd"); //compare
+       message = "Second Placer!";
+        break;
+         case (rank === "3rd"); //compare
+        message = "Third Placer!";
+        break;
+         case (rank === "4th"); //compare
+        message = "Fourth Placer!";
+        break;
+        default;
+        message = "Rank not available at this time.";
+
+
+
+    }
+
+
     let team = "Yellow"; //string
 
     switch (team){
